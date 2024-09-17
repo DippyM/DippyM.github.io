@@ -1,0 +1,14 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/FiraCodeRegular.ttf");
+    font-family: "Fira Code";
+    font-weight: 400;
+}
+@font-face{
+    font-display: swap;
+    font-style: normal;
+    src: url("../public/fonts/FiraCodeBold.ttf");
+    font-family: "Fira Code";
+    font-weight: 700;
+}

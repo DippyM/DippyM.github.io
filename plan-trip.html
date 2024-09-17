@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Plan Trip - Share Your Adventure</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="./css/components.css" />
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="ui heading size-headingxs">Plan Trip</h1>
+        </header>
+
+        <main class="container-xs">
+            <section class="trip-section">
+                <h2>Share Your Adventure</h2>
+                <form id="trip-form">
+                    <div class="data">
+                        <label for="destination">Destination:</label>
+                        <input type="text" id="destination" name="destination" required>
+                    </div>
+                    <div class="data">
+                        <label for="date">Date of Trip:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="data">
+                        <label for="description">Trip Description:</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="data">
+                        <label for="photos">Upload Photos:</label>
+                        <input type="file" id="photos" name="photos" multiple accept="image/*">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Submit Trip</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer_copyright-text ui text size-textxs">© Copyright 2024. Made by AsiMaty</p>
+        </footer>
+
+        <script>
+            // Zpracování odeslání formuláře
+            document.getElementById('trip-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Trip submitted successfully!');
+                // Zde by se data formuláře odeslala na server
+            });
+        </script>
+    </body>
+</html>

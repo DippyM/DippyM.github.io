@@ -1,0 +1,43 @@
+/*=========== TABLE OF CONTENTS ==============
+1. Text CSS
+2. Heading CSS
+3. Container CSS
+==============================================*/
+
+/*------------------------------------------
+    1. Text CSS
+-------------------------------------------*/
+.ui.text.size-textxs {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ui.text {
+    color: var(--blue_gray_100_cc);
+    font-family: Fira Code;
+}
+
+/*------------------------------------------
+    2. Heading CSS
+-------------------------------------------*/
+.ui.heading.size-headingxs {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.ui.heading {
+    color: var(--blue_a200);
+    font-family: Fira Code;
+}
+
+/*------------------------------------------
+    3. Container CSS
+-------------------------------------------*/
+.container-xs {
+    max-width: 924px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>User Profile - Connect and Plan Your Tips</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000000" />
+        <meta   name="description"
+                content="Access your user profile to plan trips, connect with friends, and manage your travel preferences. Join AsiMaty today and start your adventure"
+                />
+                <img
+                    alt="Logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/640px-LEGO_logo.svg.png"
+                    style="width: 0px; height: 0px; display: none"
+                    />
+                    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+                    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+                    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+                    <link rel="stylesheet" type="text/css" href="./css/components.css" />
+                    <link rel="stylesheet" type="text/css" href="./css/Profile.css" />
+                    <link rel="stylesheet" type="text/css" href="./css/login.css" />
+
+    </head>
+    <body>
+        <div class="profile">
+            <!-- navigation header section -->
+            <header class="header">
+                <div class="header_top-row">
+                    <div class="header_menu">
+                        <div class="header_menu-column">
+                            <ul class="header_menu-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="header_action-row">
+                                            <p class="header_action-icon ui text size-textxs">#</p>
+                                            <p class="ui text size-textxs">home</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="ui text size-textxs">profil</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="header_action-row">
+                                            <p class="header_action-icon ui text size-textxs">#</p>
+                                            <p class="ui text size-textxs">map</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header_link-row">
+                                <p class="header_action-icon ui text size-textxs">#</p>
+                            </div>
+                        </div>
+                        <div class="header_action-row">
+                            <h6 class="header_action-icon ui heading size-headingxs">+</h6>
+                            <p class="header_action-text ui text size-textxs">Plan Trip</p>
+                        </div>
+                    </div>
+                    <!-- Overlay background for the popup -->
+                    <div id="overlay" onclick="closeLoginForm()"></div>
+
+                            <!-- Login form container -->
+                            <div class="container" id="loginPopup">
+                                <!-- Close button in the top-right corner -->
+                                <span class="close-btn" onclick="closeLoginForm()">×</span>
+
+                                <!-- Heading for the form -->
+                                <div class="text">Login</div>
+
+                                <!-- Login form -->
+                                <form action="#">
+                                    <div class="data">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" required>
+                                    </div>
+
+                                    <div class="data">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" required>
+                                    </div>
+
+                                    <!-- Forgot password link -->
+                                    <div class="forgot-pass">
+                                        <a href="#">Forgot your password?</a>
+                                    </div>
+
+                                    <!-- Login button -->
+                                    <div class="btn">
+                                        <button type="submit">Login</button>
+                                    </div>
+
+                                    <!-- Signup link -->
+                                    <div class="signup-link">
+                                        Don't have an account? <a href="#">Sign up</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Button to trigger the login form -->
+                            <button onclick="openLoginForm()">Open Login</button>
+            </header>
+            
+            <!-- main content section -->
+            <div class="columnview_five">
+                <div class="rowvectorone">
+                    <img src="public/images/img_rectangle_3.svg" alt="Image" class="profile_image"/>
+                    <div class="profile-section">
+                        <div class="profile-section_row">
+                            <div class="profile-section_view"></div>
+                            <div class="profile-section_column">
+                                <div class="profile-section_column-view"></div>
+                                <div class="profile-section_column-view--alt"></div>
+                            </div>
+                        </div>
+                        <div class="profile-section_divider"></div>
+                        <div class="profile-section_view--secondary"></div>
+                        <div class="profile-section_view-tertiary"></div>
+                    </div>
+                    <div class="profile_view"></div>
+                </div>
+
+            <!-- profile section -->
+             <div class="columnview_six">
+                <div class="profile_view-1 container-xs"></div>
+                <div class="columnview_five container-xs">
+                    <div class="profile_list_item"></div>
+                    <div class="profile_list_item-1"></div>
+                </div>
+             </div>
+            </div>
+        
+            <!-- footer section -->
+             <footer class="footer">
+                <div class="footer_column">
+                    <div class="footer_divider"></div>
+                    <div class="footer_copyright-column">
+                        <div class="footer_contact-info">
+                            <div class="footer_email-row">
+                                <div class="footer_social-row">
+                                    <img src="public/images/img_gmail.svg" alt="Gmail Icon" class="footer_social-icon--gmail" />
+                                    <h6 class="ui heading size-headingxs">AsiMaty</h6>
+                                </div>
+                                <p class="footer_role-description ui text size-textxs">mateswolny@seznam.cz</p>
+                            </div>
+                            <p class="footer_role-description ui text size-textxs">Web designer and front-end developer</p>
+                        </div>
+                        <div class="footer_logo-column">
+                            <img src="public/images/img_footer_logo.png" alt="Footer Logo" class="footer_logo" />
+                            <div class="footer_social-icons-row">
+                                <img src="public/images/img_github.svg" alt="Github Icon" class="footer_social-icon--github" />
+                                <img src="public/images/img_settings.svg" alt="Settings Icon" class="footer_social-icon--github" />
+                                <img src="public/images/img_settings_blue_a200.svg" alt="Blue Settings Icon" class="footer_social-icon--github" />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer_copyright-text ui text size-textxs">© Copyright 2024. Made by AsiMaty</p>
+                </div>
+             </footer>
+        </div>
+    </body>
+
+    <script>
+    // Function to open the login form and overlay
+function openLoginForm() {
+    // Show the login popup and overlay with animation
+    document.getElementById("loginPopup").style.display = "flex"; // Use flexbox layout
+    document.getElementById("overlay").style.display = "block"; // Show the overlay
+
+    // Remove any fade-out class (if it was used earlier)
+    document.getElementById("loginPopup").classList.remove("fade-out");
+    document.getElementById("overlay").classList.remove("fade-out");
+}
+
+// Function to close the login form and overlay with fade-out animation
+function closeLoginForm() {
+    // Add fade-out animation to the form and overlay
+    document.getElementById("loginPopup").classList.add("fade-out");
+    document.getElementById("overlay").classList.add("fade-out");
+
+    // After animation ends (0.3 seconds), hide the form and overlay
+    setTimeout(function () {
+        document.getElementById("loginPopup").style.display = "none"; // Hide form
+        document.getElementById("overlay").style.display = "none"; // Hide overlay
+    }, 300); // Duration matches the CSS animation time
+}
+
+function loginUser(event) {
+        event.preventDefault();  // Prevents the default form submission
+        const email = document.querySelector('input[type="text"]').value;
+        const password = document.querySelector('input[type="password"]').value;
+
+        if (email && password) {
+            // Perform your authentication logic here
+            console.log("Email:", email);
+            console.log("Password:", password);
+            
+            // Simulate a successful login
+            alert("Login successful!");
+            // Redirect to another page after successful login
+            window.location.href = "dashboard.html";  // Replace with your actual dashboard page
+        } else {
+            alert("Please fill in all fields");
+        }
+    }
+
+    // Attach the event listener to the form
+    document.querySelector('form').addEventListener('submit', loginUser);
+
+        </script>
+</html>

@@ -1,0 +1,18 @@
+:root {
+    /*------------Color variables------------*/
+    --black_900: #000000;
+    --blue_a200: #5889e4;
+    --blue_gray_100: #d9d9d9;
+    --blue_gray_100_cc: #d9d9d9cc;
+    --blue_gray_50: #ecf0f1;
+    --blue_gray_800: #2c3e50;
+    --green-a400: #2ecc71;
+    --green_a400_ea: #2ecc71ea;
+    --indigo_700: #37568f;
+    --red_100: #f4e1d2;
+
+    /*-----------Spacing variables-----------*/
+    --space-xs: 8px;
+    --space-sm: 10px;
+    --space-md: 12px;
+}
